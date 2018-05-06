@@ -7,13 +7,14 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.Licenta2018Web.springmvc.model.User;
 import com.Licenta2018Web.springmvc.service.SecurityService;
 import com.Licenta2018Web.springmvc.service.UserService;
 import com.Licenta2018Web.springmvc.validation.UserValidator;
 
-@Controller
+@RestController
 public class UserController {
     @Autowired
     private UserService userService;
